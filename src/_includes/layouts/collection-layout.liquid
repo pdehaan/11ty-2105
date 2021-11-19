@@ -1,0 +1,21 @@
+---
+# layout: main.liquid
+---
+
+{%- assign products = collections[currCollection.name] -%}
+
+<h1 id="category-title">{{ currCollection.title }}</h1>
+
+<ul id="products">
+  {% for product in products %}
+    <li>
+      <a href="{{ product.url }}">
+        <img alt="" src="{{ product.data.image }}" />
+        {{ product.data.name }}
+      </a>
+      <p class="price">{{ product.data.price | money }}</p>
+    </li>
+  {% else %}
+    <li class="err-no-products">No products found</li>
+  {% endfor %}
+</ul>

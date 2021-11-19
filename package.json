@@ -1,0 +1,25 @@
+{
+  "name": "11ty-2105",
+  "description": "",
+  "version": "1.0.0",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/pdehaan/11ty-2105/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  },
+  "homepage": "https://github.com/pdehaan/11ty-2105#readme",
+  "keywords": [],
+  "license": "ISC",
+  "main": ".eleventy.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/11ty-2105.git"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
